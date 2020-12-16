@@ -6,8 +6,11 @@ Dynamic Programming is a method for solving a complex problem by breaking it dow
 In these examples, I used an empty dictionary to store the key-value pairs which correspond to their respective index and their solution.
 
 ## 1. Fibbonacci Sequence: fib(n)
-The Fibbonacci sequence can be solved by adding the previous two numbers in the sequence together.
-The time was O(2^n) and storage O(n) for brute force, and O(2n) and storage (n) after memoization.
+According to wikipedia (and common sense), the Fibonacci sequence is a list of numbers where each number is the sum of the two preceding ones, starting from 0 and 1. The proceeding (or any) values of Fibbonacci sequence can be solved by adding the previous two numbers in the sequence together.
+```
+fib(n) = fib(n-1) - fib(n-2)
+```
+The time was O(2^n) and storage O(n) for brute force, and O(n) and storage O(n) after memoization.
 
 ## 2. Grid Traveler / Shortest path: gridTraveler(n, m)
 Given a matrix of size nxm, and only being allowed to move either left or down at one time, how many ways can you go from top left to bottom right?
