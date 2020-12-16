@@ -6,7 +6,7 @@ Dynamic Programming is a method for solving a complex problem by breaking it dow
 In these examples, I used an empty dictionary to store the key-value pairs which correspond to their respective index and their solution.
 
 ## 1. Fibbonacci Sequence: fib(n)
-According to wikipedia (and common sense), the Fibonacci sequence is a list of numbers where each number is the sum of the two preceding ones, starting from 0 and 1. The proceeding (or any) values of Fibbonacci sequence can be solved by adding the previous two numbers in the sequence together.
+According to wikipedia (and common sense), the Fibonacci sequence is a list of numbers where each number is the sum of the two preceding ones, starting from 0 and 1. The proceeding (or any) values of Fibbonacci sequence can be solved by finding the sum of the previous two numbers in the sequence.
 ```
 fib(n) = fib(n-1) - fib(n-2)
 ```
