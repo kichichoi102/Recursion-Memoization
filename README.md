@@ -10,6 +10,13 @@ The Fibbonacci sequence can be solved by adding the previous two numbers in the 
 The time was O(2^n) and storage O(n) for brute force, and O(2n) and storage (n) after memoization.
 
 ## 2. Grid Traveler / Shortest path: gridTraveler(n, m)
-Given a matrix of size nxm, and only being allowed to move left or down, how many ways can you go from top left to bottom right?
+Given a matrix of size nxm, and only being allowed to move either left or down at one time, how many ways can you go from top left to bottom right?
+The algorithm in this case is that if you move down, you can consider the solution to be gridTraveler(n-1, m), and moving right to be gridTraveler(n, m-1). Using this idea, we can deduce that given a size nxm, the number of paths are **gridTraveler(n, m) = gridTraveler(n-1, m) + gridTraveler(n, m-1)** 
+Storing the values into memo={} greatly increases the efficiency
+Brute Force rec:
+time: O(m^n), storage: O(m)
+Memoized rec:
+time: O(mxn), storage: O(m)
 
+## to be continued i have a final soon
 
