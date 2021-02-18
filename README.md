@@ -21,5 +21,5 @@ time: O(m^n), storage: O(m)
 Memoized rec:
 time: O(mxn), storage: O(m)
 
-## to be continued i have a final soon
-
+## 3. Target Calculator: canSum(target, numbers)
+Given an array of potential numbers and a target number, is there a way to add up to the target number using a sum of the given numbers? For example, if we want to find if we can add up to 17, given an array of [10, 5, 2], the answer would be True (10+5+2 = 17). To make a dynamic program to solve this, we need a recursive algorithm, and a memoized version to greatly reduce processing time.
