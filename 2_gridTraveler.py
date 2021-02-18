@@ -8,5 +8,4 @@ def gridTraveler(m, n):
 
 print(gridTraveler(3,3))
 print(gridTraveler(0,3))
-print(gridTraveler(1,3))
-print(gridTraveler(2,1))
+print(gridTraveler(20,40))

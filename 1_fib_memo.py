@@ -10,4 +10,4 @@ def fib(n, memo = {}):
 print(fib(0))
 print(fib(4))
 print(fib(10))
-print(fib(14))
+print(fib(18))
