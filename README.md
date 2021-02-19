@@ -21,5 +21,14 @@ time: O(m^n), storage: O(m)
 Memoized rec:
 time: O(mxn), storage: O(m)
 
-## 3. Target Calculator: canSum(target, numbers)
-Given an array of potential numbers and a target number, is there a way to add up to the target number using a sum of the given numbers? For example, if we want to find if we can add up to 17, given an array of [10, 5, 2], the answer would be True (10+5+2 = 17). To make a dynamic program to solve this, we need a recursive algorithm, and a memoized version to greatly reduce processing time.
+## 3. Target Calculator Part 1: canSum(target, numbers)
+There are three parts to the target calculator algorithm. Given an array of potential numbers and a target number, is there a way to add up to the target number using a sum of the given numbers? For example, if we want to find if we can add up to 17, given an array of [10, 5, 2], the answer would be True (10+5+2 = 17). To make a dynamic program to solve this, we need a recursive algorithm, and a memoized version to greatly reduce processing time. The equation to solve this ends up being: 
+'''
+remainder = target - numbers[num]
+'''
+for every numbers in its array. If the remainder returns a 0, then we know that the array goes into the target number. If it returns any value lesser than 0, then we know that the answer is not possible, thus, return false.
+
+## 4. Target Calculator Part 2: howSum(target, numbers)
+Adding on to 3. this algorithm returns the elements involved in adding up to the target value. For example, if we run howSum(7, [5,3,4,7]), we know that 3 and 4 add up to the target value, 7. The return value would be the position of the elements, in this case, it would be [1, 2]. The algorithm is the same, but we append the index, "num", instead of the previous binary model.
+
+## 5. Target Calculator Part 3: bestSum(target, numbers)
