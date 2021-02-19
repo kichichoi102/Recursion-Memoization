@@ -13,11 +13,19 @@ According to wikipedia (and common sense), the Fibonacci sequence is a list of n
 ```
 fib(n) = fib(n-1) - fib(n-2)
 ```
-The time was O(2^n) and storage O(n) for brute force, and O(n) and storage O(n) after memoization.
+**Brute Force:**
+time: O(2^n)
+storage: O(n)
+Memoized:
+time: O(n)
+storage: O(n)
 
 ## 2. Grid Traveler / Shortest path: gridTraveler(m,n)
 Given a matrix of size nxm, and only being allowed to move either left or down at one time, how many ways can you go from top left to bottom right?
-The algorithm in this case is that if you move down, you can consider the solution to be gridTraveler(n-1, m), and moving right to be gridTraveler(n, m-1). Using this idea, we can deduce that given a size nxm, the number of paths are **gridTraveler(n, m) = gridTraveler(n-1, m) + gridTraveler(n, m-1)** 
+The algorithm in this case is that if you move down, you can consider the solution to be gridTraveler(n-1, m), and moving right to be gridTraveler(n, m-1). Using this idea, we can deduce that given a size nxm, the number of paths are 
+'''
+gridTraveler(n, m) = gridTraveler(n-1, m) + gridTraveler(n, m-1)
+'''
 Storing the values into memo={} greatly increases the efficiency
 Brute Force rec:
 time: O(m^n), storage: O(m)
