@@ -1,6 +1,9 @@
 # Recursion-Memoization
 Taking common recursion algorithms and memoizing it to greatly improve the efficiency
 
+## Memoization
+Memoization is an optimization technique to speed up processes by storing the results of function calls and returning such cached results when its input is required. As one can tell, memoization can work very nicely with recursive algorithms to greatly improve efficiency.
+
 ## Dynamic Programming
 Dynamic Programming is a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions using a memory-based data structure (array, map,etc).
 In these examples, I used an empty dictionary to store the key-value pairs which correspond to their respective index and their solution.
